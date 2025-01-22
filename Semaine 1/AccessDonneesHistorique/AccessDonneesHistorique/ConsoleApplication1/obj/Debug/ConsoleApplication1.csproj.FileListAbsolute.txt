@@ -1,0 +1,18 @@
+D:\Todelete\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+D:\Todelete\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+D:\Todelete\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\Todelete\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\Todelete\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\Todelete\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+D:\Hugo St-Louis\Cours A2016\420-GED-HY\Semaine 1\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+D:\Hugo St-Louis\Cours A2016\420-GED-HY\Semaine 1\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\Hugo St-Louis\Cours A2016\420-GED-HY\Semaine 1\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\PLDucharme\source\repos\plducharme\420-4DB-HY-H25\Semaine 1\AccessDonneesHistorique\AccessDonneesHistorique\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\PLDucharme\source\repos\plducharme\420-4DB-HY-H25\Semaine 1\AccessDonneesHistorique\AccessDonneesHistorique\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\PLDucharme\source\repos\plducharme\420-4DB-HY-H25\Semaine 1\AccessDonneesHistorique\AccessDonneesHistorique\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\PLDucharme\source\repos\plducharme\420-4DB-HY-H25\Semaine 1\AccessDonneesHistorique\AccessDonneesHistorique\ConsoleApplication1\bin\Debug\System.dll
+C:\Users\PLDucharme\source\repos\plducharme\420-4DB-HY-H25\Semaine 1\AccessDonneesHistorique\AccessDonneesHistorique\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.AssemblyReference.cache
+C:\Users\PLDucharme\source\repos\plducharme\420-4DB-HY-H25\Semaine 1\AccessDonneesHistorique\AccessDonneesHistorique\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.CoreCompileInputs.cache
+C:\Users\PLDucharme\source\repos\plducharme\420-4DB-HY-H25\Semaine 1\AccessDonneesHistorique\AccessDonneesHistorique\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.CopyComplete
+C:\Users\PLDucharme\source\repos\plducharme\420-4DB-HY-H25\Semaine 1\AccessDonneesHistorique\AccessDonneesHistorique\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\PLDucharme\source\repos\plducharme\420-4DB-HY-H25\Semaine 1\AccessDonneesHistorique\AccessDonneesHistorique\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
