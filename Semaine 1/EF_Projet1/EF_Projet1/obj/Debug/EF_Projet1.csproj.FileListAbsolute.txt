@@ -1,0 +1,24 @@
+D:\Cours H2022\4DB\Lectures\LE01 - Introduction à EF\EF_Projet1\EF_Projet1\bin\Debug\EF_Projet1.exe.config
+D:\Cours H2022\4DB\Lectures\LE01 - Introduction à EF\EF_Projet1\EF_Projet1\bin\Debug\EF_Projet1.exe
+D:\Cours H2022\4DB\Lectures\LE01 - Introduction à EF\EF_Projet1\EF_Projet1\bin\Debug\EF_Projet1.pdb
+D:\Cours H2022\4DB\Lectures\LE01 - Introduction à EF\EF_Projet1\EF_Projet1\bin\Debug\EntityFramework.dll
+D:\Cours H2022\4DB\Lectures\LE01 - Introduction à EF\EF_Projet1\EF_Projet1\bin\Debug\EntityFramework.SqlServer.dll
+D:\Cours H2022\4DB\Lectures\LE01 - Introduction à EF\EF_Projet1\EF_Projet1\bin\Debug\EntityFramework.xml
+D:\Cours H2022\4DB\Lectures\LE01 - Introduction à EF\EF_Projet1\EF_Projet1\bin\Debug\EntityFramework.SqlServer.xml
+D:\Cours H2022\4DB\Lectures\LE01 - Introduction à EF\EF_Projet1\EF_Projet1\bin\Debug\fr\EntityFramework.resources.dll
+D:\Cours H2022\4DB\Lectures\LE01 - Introduction à EF\EF_Projet1\EF_Projet1\obj\Debug\EF_Projet1.csproj.CoreCompileInputs.cache
+D:\Cours H2022\4DB\Lectures\LE01 - Introduction à EF\EF_Projet1\EF_Projet1\obj\Debug\EF_Projet1.csproj.CopyComplete
+D:\Cours H2022\4DB\Lectures\LE01 - Introduction à EF\EF_Projet1\EF_Projet1\obj\Debug\EF_Projet1.exe
+D:\Cours H2022\4DB\Lectures\LE01 - Introduction à EF\EF_Projet1\EF_Projet1\obj\Debug\EF_Projet1.pdb
+C:\Users\PLDucharme\Source\Repos\plducharme\420-4DB-HY-H25\Semaine 1\EF_Projet1\EF_Projet1\bin\Debug\EF_Projet1.exe.config
+C:\Users\PLDucharme\Source\Repos\plducharme\420-4DB-HY-H25\Semaine 1\EF_Projet1\EF_Projet1\bin\Debug\EF_Projet1.exe
+C:\Users\PLDucharme\Source\Repos\plducharme\420-4DB-HY-H25\Semaine 1\EF_Projet1\EF_Projet1\bin\Debug\EF_Projet1.pdb
+C:\Users\PLDucharme\Source\Repos\plducharme\420-4DB-HY-H25\Semaine 1\EF_Projet1\EF_Projet1\bin\Debug\EntityFramework.dll
+C:\Users\PLDucharme\Source\Repos\plducharme\420-4DB-HY-H25\Semaine 1\EF_Projet1\EF_Projet1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PLDucharme\Source\Repos\plducharme\420-4DB-HY-H25\Semaine 1\EF_Projet1\EF_Projet1\bin\Debug\EntityFramework.xml
+C:\Users\PLDucharme\Source\Repos\plducharme\420-4DB-HY-H25\Semaine 1\EF_Projet1\EF_Projet1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PLDucharme\Source\Repos\plducharme\420-4DB-HY-H25\Semaine 1\EF_Projet1\EF_Projet1\obj\Debug\EF_Projet1.csproj.AssemblyReference.cache
+C:\Users\PLDucharme\Source\Repos\plducharme\420-4DB-HY-H25\Semaine 1\EF_Projet1\EF_Projet1\obj\Debug\EF_Projet1.csproj.CoreCompileInputs.cache
+C:\Users\PLDucharme\Source\Repos\plducharme\420-4DB-HY-H25\Semaine 1\EF_Projet1\EF_Projet1\obj\Debug\EF_Projet1.csproj.CopyComplete
+C:\Users\PLDucharme\Source\Repos\plducharme\420-4DB-HY-H25\Semaine 1\EF_Projet1\EF_Projet1\obj\Debug\EF_Projet1.exe
+C:\Users\PLDucharme\Source\Repos\plducharme\420-4DB-HY-H25\Semaine 1\EF_Projet1\EF_Projet1\obj\Debug\EF_Projet1.pdb

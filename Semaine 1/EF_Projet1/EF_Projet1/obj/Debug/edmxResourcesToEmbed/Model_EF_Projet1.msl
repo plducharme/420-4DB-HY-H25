@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_PROGRAMMINGEFDB1ModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Contacts">
+      <EntityTypeMapping TypeName="DB_PROGRAMMINGEFDB1Model.Contact">
+        <MappingFragment StoreEntitySet="Contact">
+          <ScalarProperty Name="PhotoPath" ColumnName="PhotoPath" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Ages" ColumnName="Age" />
+          <ScalarProperty Name="COVID" ColumnName="COVID" />
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ImageContact" ColumnName="ImageContact" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Projets">
+      <EntityTypeMapping TypeName="DB_PROGRAMMINGEFDB1Model.Projet">
+        <MappingFragment StoreEntitySet="Projets">
+          <ScalarProperty Name="Subvention" ColumnName="Subvention" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Projet_Contact" TypeName="DB_PROGRAMMINGEFDB1Model.Projet_Contact" StoreEntitySet="Projet_Contact">
+      <EndProperty Name="Contact">
+        <ScalarProperty Name="ContactID" ColumnName="IdContact" />
+      </EndProperty>
+      <EndProperty Name="Projets">
+        <ScalarProperty Name="ID" ColumnName="IdProjet" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
