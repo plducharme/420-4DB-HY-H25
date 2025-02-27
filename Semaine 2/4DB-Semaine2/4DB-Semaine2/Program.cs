@@ -16,17 +16,17 @@ namespace _4DB_Semaine2
     {
         static void Main(string[] args)
         {
-            //Ex#1
-            //using (ProgEF_Entities context = new ProgEF_Entities())
-            //{
-            //    List<Contact> lstContacts = context.Contacts.ToList(); //Exécution de la requête se fait ici
-            //    foreach (Contact c in lstContacts)
-            //        Console.WriteLine(c.FirstName + " - " + c.LastName);
-            //    //Différence???????
-            //    var contacts = context.Contacts;
-            //    foreach (Contact c in contacts) //Exécution de la requête se fait ici
-            //        Console.WriteLine(c.FirstName + " - " + c.LastName );
-            //}
+            // Ex#1
+            using (ProgEF_Entities context = new ProgEF_Entities())
+            {
+                List<Contact> lstContacts = context.Contacts.ToList(); //Exécution de la requête se fait ici
+                foreach (Contact c in lstContacts)
+                    Console.WriteLine(c.FirstName + " - " + c.LastName);
+                //Différence???????
+                var contacts = context.Contacts;
+                foreach (Contact c in contacts) //Exécution de la requête se fait ici
+                    Console.WriteLine(c.FirstName + " - " + c.LastName);
+            }
 
             //CAS À NE PAS FAIRE
             //using (ProgEF_Entities context = new ProgEF_Entities())

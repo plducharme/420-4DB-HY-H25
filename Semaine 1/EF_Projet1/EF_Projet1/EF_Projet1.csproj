@@ -70,8 +70,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Address.cs">
+      <DependentUpon>Model_EF_Projet1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Contact.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Model_EF_Projet1.tt</DependentUpon>
     </Compile>
     <Compile Include="Model1.cs">
       <AutoGen>True</AutoGen>
@@ -95,9 +98,19 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Projet.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Model_EF_Projet1.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="_4DB_PROGRAMMINGEFDB1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_4DB_PROGRAMMINGEFDB1DataSet.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -109,6 +122,21 @@
       <DependentUpon>Model_EF_Projet1.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="_4DB_PROGRAMMINGEFDB1DataSet.xsc">
+      <DependentUpon>_4DB_PROGRAMMINGEFDB1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_4DB_PROGRAMMINGEFDB1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_4DB_PROGRAMMINGEFDB1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_4DB_PROGRAMMINGEFDB1DataSet.xss">
+      <DependentUpon>_4DB_PROGRAMMINGEFDB1DataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Model1.tt">

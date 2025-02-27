@@ -5,6 +5,20 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="DB_PROGRAMMINGEFDB1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Address">
+          <Key>
+            <PropertyRef Name="AddressID" />
+          </Key>
+          <Property Name="AddressID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Street1" Type="nvarchar" MaxLength="50" />
+          <Property Name="Street2" Type="nvarchar" MaxLength="50" />
+          <Property Name="City" Type="nvarchar" MaxLength="50" />
+          <Property Name="StateProvince" Type="nvarchar" MaxLength="50" />
+          <Property Name="CountryRegion" Type="nvarchar" MaxLength="50" />
+          <Property Name="PostalCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="AddressType" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
         <EntityType Name="Contact">
           <Key>
             <PropertyRef Name="ContactID" />
@@ -22,6 +36,14 @@
           <Property Name="Photo" Type="image" />
           <Property Name="PhotoPath" Type="nvarchar" MaxLength="50" />
         </EntityType>
+        <EntityType Name="ContactAdress">
+          <Key>
+            <PropertyRef Name="ContactID" />
+            <PropertyRef Name="AddressID" />
+          </Key>
+          <Property Name="ContactID" Type="int" Nullable="false" />
+          <Property Name="AddressID" Type="int" Nullable="false" />
+        </EntityType>
         <EntityType Name="Projet_Contact">
           <Key>
             <PropertyRef Name="IdProjet" />
@@ -38,6 +60,34 @@
           <Property Name="Description" Type="nvarchar(max)" />
           <Property Name="Subvention" Type="int" />
         </EntityType>
+        <Association Name="FK_ContactAdress_Address">
+          <End Role="Address" Type="Self.Address" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ContactAdress" Type="Self.ContactAdress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Address">
+              <PropertyRef Name="AddressID" />
+            </Principal>
+            <Dependent Role="ContactAdress">
+              <PropertyRef Name="AddressID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ContactAdress_Contact">
+          <End Role="Contact" Type="Self.Contact" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ContactAdress" Type="Self.ContactAdress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Contact">
+              <PropertyRef Name="ContactID" />
+            </Principal>
+            <Dependent Role="ContactAdress">
+              <PropertyRef Name="ContactID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_Projet_Contact_Contact">
           <End Role="Contact" Type="Self.Contact" Multiplicity="1">
             <OnDelete Action="Cascade" />
@@ -65,9 +115,19 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="DB_PROGRAMMINGEFDB1ModelStoreContainer">
+          <EntitySet Name="Address" EntityType="Self.Address" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Contact" EntityType="Self.Contact" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ContactAdress" EntityType="Self.ContactAdress" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Projet_Contact" EntityType="Self.Projet_Contact" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Projets" EntityType="Self.Projets" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_ContactAdress_Address" Association="Self.FK_ContactAdress_Address">
+            <End Role="Address" EntitySet="Address" />
+            <End Role="ContactAdress" EntitySet="ContactAdress" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ContactAdress_Contact" Association="Self.FK_ContactAdress_Contact">
+            <End Role="Contact" EntitySet="Contact" />
+            <End Role="ContactAdress" EntitySet="ContactAdress" />
+          </AssociationSet>
           <AssociationSet Name="FK_Projet_Contact_Contact" Association="Self.FK_Projet_Contact_Contact">
             <End Role="Contact" EntitySet="Contact" />
             <End Role="Projet_Contact" EntitySet="Projet_Contact" />
@@ -98,6 +158,7 @@
           <Property Name="Ages" Type="Int32" Nullable="false" />
           <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
           <Property Name="PhotoPath" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Addresses" Relationship="DB_PROGRAMMINGEFDB1Model.ContactAdress" FromRole="Contact" ToRole="Address" />
         </EntityType>
         <EntityType Name="Projet">
           <Key>
@@ -119,7 +180,31 @@
             <End Role="Contact" EntitySet="Contacts" />
             <End Role="Projets" EntitySet="Projets" />
           </AssociationSet>
+          <EntitySet Name="Addresses" EntityType="DB_PROGRAMMINGEFDB1Model.Address" />
+          <AssociationSet Name="ContactAdress" Association="DB_PROGRAMMINGEFDB1Model.ContactAdress">
+            <End Role="Address" EntitySet="Addresses" />
+            <End Role="Contact" EntitySet="Contacts" />
+          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="Address">
+          <Key>
+            <PropertyRef Name="AddressID" />
+          </Key>
+          <Property Name="AddressID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Street1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Street2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="StateProvince" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CountryRegion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PostalCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AddressType" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Contacts" Relationship="DB_PROGRAMMINGEFDB1Model.ContactAdress" FromRole="Address" ToRole="Contact" />
+        </EntityType>
+        <Association Name="ContactAdress">
+          <End Type="DB_PROGRAMMINGEFDB1Model.Address" Role="Address" Multiplicity="*" />
+          <End Type="DB_PROGRAMMINGEFDB1Model.Contact" Role="Contact" Multiplicity="*" />
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -159,6 +244,29 @@
             </EndProperty>
             <EndProperty Name="Projets">
               <ScalarProperty Name="ID" ColumnName="IdProjet" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <EntitySetMapping Name="Addresses">
+            <EntityTypeMapping TypeName="DB_PROGRAMMINGEFDB1Model.Address">
+              <MappingFragment StoreEntitySet="Address">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="AddressType" ColumnName="AddressType" />
+                <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+                <ScalarProperty Name="CountryRegion" ColumnName="CountryRegion" />
+                <ScalarProperty Name="StateProvince" ColumnName="StateProvince" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Street2" ColumnName="Street2" />
+                <ScalarProperty Name="Street1" ColumnName="Street1" />
+                <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="ContactAdress" TypeName="DB_PROGRAMMINGEFDB1Model.ContactAdress" StoreEntitySet="ContactAdress">
+            <EndProperty Name="Contact">
+              <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+            </EndProperty>
+            <EndProperty Name="Address">
+              <ScalarProperty Name="AddressID" ColumnName="AddressID" />
             </EndProperty>
           </AssociationSetMapping>
         </EntityContainerMapping>

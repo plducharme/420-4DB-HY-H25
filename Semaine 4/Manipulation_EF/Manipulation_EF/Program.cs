@@ -44,6 +44,17 @@ namespace Manipulation_EF
             //    Console.WriteLine(c.ContactID);
             //}
 
+            using (ProgEF_Entities context = new ProgEF_Entities())
+            {
+                var product = context.Products.FirstOrDefault();
+                var entry = context.Entry(product);
+                Console.WriteLine("Entity name: " + entry.Entity.GetType().Name);
+                Console.WriteLine("State: " + entry.State);
+                Console.WriteLine("Original values: " + entry.OriginalValues);
+                Console.WriteLine("Current values: " + entry.CurrentValues);
+            }
+
+
 
             //Ajout avec plusieurs contextes
             Address address;
