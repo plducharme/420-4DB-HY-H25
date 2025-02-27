@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeuxOlympiques", "JeuxOlympiques\JeuxOlympiques.csproj", "{A8E42127-E43F-4F61-9E06-9B2933774B02}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Experimentation", "WPF_Experimentation\WPF_Experimentation.csproj", "{88327E84-1358-4C60-BD23-F91A6B7EC23D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A8E42127-E43F-4F61-9E06-9B2933774B02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A8E42127-E43F-4F61-9E06-9B2933774B02}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A8E42127-E43F-4F61-9E06-9B2933774B02}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A8E42127-E43F-4F61-9E06-9B2933774B02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88327E84-1358-4C60-BD23-F91A6B7EC23D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88327E84-1358-4C60-BD23-F91A6B7EC23D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88327E84-1358-4C60-BD23-F91A6B7EC23D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88327E84-1358-4C60-BD23-F91A6B7EC23D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E5506664-8B70-4C6B-98BE-EE9F40F9926E}
+		SolutionGuid = {546F14E6-E4C2-41DC-B4C6-03DC962CF2CC}
 	EndGlobalSection
 EndGlobal
