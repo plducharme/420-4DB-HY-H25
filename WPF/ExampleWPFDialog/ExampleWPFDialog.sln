@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleWPFDialog", "ExampleWPFDialog\ExampleWPFDialog.csproj", "{EE24B8B8-D383-42A3-8AE6-17D6AED6BED2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE24B8B8-D383-42A3-8AE6-17D6AED6BED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE24B8B8-D383-42A3-8AE6-17D6AED6BED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE24B8B8-D383-42A3-8AE6-17D6AED6BED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE24B8B8-D383-42A3-8AE6-17D6AED6BED2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58F3A1F4-7EBB-4B1D-A642-70B3D441B509}
+	EndGlobalSection
+EndGlobal
