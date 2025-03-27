@@ -8,6 +8,8 @@
         <EntityTypeShape EntityType="DB_PROGRAMMINGEFDB1Model.Contact" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="DB_PROGRAMMINGEFDB1Model.Projet" Width="1.5" PointX="4.875" PointY="1.625" IsExpanded="true" />
         <AssociationConnector Association="DB_PROGRAMMINGEFDB1Model.Projet_Contact" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DB_PROGRAMMINGEFDB1Model.Address" Width="1.5" PointX="0.75" PointY="6.375" />
+        <AssociationConnector Association="DB_PROGRAMMINGEFDB1Model.ContactAdress" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

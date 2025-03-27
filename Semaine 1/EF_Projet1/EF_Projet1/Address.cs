@@ -12,17 +12,23 @@ namespace EF_Projet1
     using System;
     using System.Collections.Generic;
     
-    public partial class Projet
+    public partial class Address
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Projet()
+        public Address()
         {
             this.Contacts = new HashSet<Contact>();
         }
     
-        public int ID { get; set; }
-        public string Description { get; set; }
-        public Nullable<int> Subvention { get; set; }
+        public int AddressID { get; set; }
+        public string Street1 { get; set; }
+        public string Street2 { get; set; }
+        public string City { get; set; }
+        public string StateProvince { get; set; }
+        public string CountryRegion { get; set; }
+        public string PostalCode { get; set; }
+        public string AddressType { get; set; }
+        public System.DateTime ModifiedDate { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Contact> Contacts { get; set; }
