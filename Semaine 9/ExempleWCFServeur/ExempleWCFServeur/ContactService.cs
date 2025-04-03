@@ -33,6 +33,27 @@ namespace ExempleWCFServeur
 
             }   
         }
+
+        public EContactError InsertContact(ContactDTO contact)
+        {
+            return EContactError.NotImplmented;
+        }
+
+        public EContactError UpdateContact(ContactDTO contact)
+        {
+            return EContactError.NotImplmented;
+        }
+
+        public EContactError DeleteContact(int id)
+        {
+            return EContactError.NotImplmented;
+        }
+
+        public List<ContactDTO> GetAllContacts()
+        {
+            return new List<ContactDTO>();
+        }
+
     }
     
 }

@@ -267,12 +267,48 @@ namespace ServiceReference1
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="EContactError", Namespace="http://schemas.datacontract.org/2004/07/ExempleWCFServeur.DTO")]
+    public enum EContactError : int
+    {
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        OK = 0,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        NotFound = 1,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        AlreadyExists = 2,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        InvalidData = 3,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        UnknownError = 4,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        NotImplmented = 5,
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IContactService")]
     public interface IContactService
     {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IContactService/GetContact", ReplyAction="http://tempuri.org/IContactService/GetContactResponse")]
         System.Threading.Tasks.Task<ServiceReference1.ContactDTO> GetContactAsync(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IContactService/InsertContact", ReplyAction="http://tempuri.org/IContactService/InsertContactResponse")]
+        System.Threading.Tasks.Task<ServiceReference1.EContactError> InsertContactAsync(ServiceReference1.ContactDTO contact);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IContactService/UpdateContact", ReplyAction="http://tempuri.org/IContactService/UpdateContactResponse")]
+        System.Threading.Tasks.Task<ServiceReference1.EContactError> UpdateContactAsync(ServiceReference1.ContactDTO contact);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IContactService/DeleteContact", ReplyAction="http://tempuri.org/IContactService/DeleteContactResponse")]
+        System.Threading.Tasks.Task<ServiceReference1.EContactError> DeleteContactAsync(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IContactService/GetAllContacts", ReplyAction="http://tempuri.org/IContactService/GetAllContactsResponse")]
+        System.Threading.Tasks.Task<ServiceReference1.ContactDTO[]> GetAllContactsAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
@@ -328,6 +364,26 @@ namespace ServiceReference1
         public System.Threading.Tasks.Task<ServiceReference1.ContactDTO> GetContactAsync(int id)
         {
             return base.Channel.GetContactAsync(id);
+        }
+        
+        public System.Threading.Tasks.Task<ServiceReference1.EContactError> InsertContactAsync(ServiceReference1.ContactDTO contact)
+        {
+            return base.Channel.InsertContactAsync(contact);
+        }
+        
+        public System.Threading.Tasks.Task<ServiceReference1.EContactError> UpdateContactAsync(ServiceReference1.ContactDTO contact)
+        {
+            return base.Channel.UpdateContactAsync(contact);
+        }
+        
+        public System.Threading.Tasks.Task<ServiceReference1.EContactError> DeleteContactAsync(int id)
+        {
+            return base.Channel.DeleteContactAsync(id);
+        }
+        
+        public System.Threading.Tasks.Task<ServiceReference1.ContactDTO[]> GetAllContactsAsync()
+        {
+            return base.Channel.GetAllContactsAsync();
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()
